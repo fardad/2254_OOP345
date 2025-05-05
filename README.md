@@ -6,7 +6,7 @@ To get started, I have created a series of videos called Workshop Zero that will
 
 Please watch the videos and listen to the instructions carefully. As a computer science student, you must learn to be precise and exact in your work. Follow the instructions EXACTLY as instructed, especially the last step of the Workshop.
 
-Here are the Videos. Again, the due date for [Workshop Zero](https://youtube.com/playlist?list=PLxB4x6RkylouixUhNXf0MuwccLriA0DGC&si=cryJ9pUfUTK7jKcl) is Monday, January 15th; start your work now!!
+Here are the Videos. Again, the due date for [Workshop Zero](https://youtube.com/playlist?list=PLxB4x6RkylouixUhNXf0MuwccLriA0DGC&si=cryJ9pUfUTK7jKcl) is Wednesday, May 14th; start your work now!!
 
 https://youtube.com/playlist?list=PLxB4x6RkylouixUhNXf0MuwccLriA0DGC&si=cryJ9pUfUTK7jKcl
  
