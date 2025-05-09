@@ -1,15 +1,9 @@
 # OOP345 NBB Notes
-## Workshop Zero
+## [Workshop Zero](WS00/readme.md)
 As a student in my C++ course, you must familiarize yourself with GitHub so you can share your daily work with me for advice, help, collaboration, and monitoring of your progress.
 
-To get started, I have created a series of videos called Workshop Zero that will instruct you on how to set up your computer to use GitHub effectively for collaboration. The due date for Workshop Zero is Monday, January 15th.
 
-Please watch the videos and listen to the instructions carefully. As a computer science student, you must learn to be precise and exact in your work. Follow the instructions EXACTLY as instructed, especially the last step of the Workshop.
 
-Here are the Videos. Again, the due date for [Workshop Zero](https://youtube.com/playlist?list=PLxB4x6RkylouixUhNXf0MuwccLriA0DGC&si=cryJ9pUfUTK7jKcl) is Monday, January 15th; start your work now!!
-
-https://youtube.com/playlist?list=PLxB4x6RkylouixUhNXf0MuwccLriA0DGC&si=cryJ9pUfUTK7jKcl
- 
 ## Mac Users
 If you are working on a Mac, you are required to learn and work with Visual Studio as an advanced IDE, especially in future semesters. To use Visual Studio on a Mac, you can either do all the git commands through the command line and use XCode (which you cannot use in future Windows-related subjects), or you can install a Virtual Machine and run Windows on your Mac. This will have Windows running in a window on your Mac without losing your Mac settings and features.
 
