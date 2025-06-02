@@ -2,22 +2,26 @@
 using namespace std;
 #include "Int.h"
 
-Int::Int(int value, auto (*vld)(int val, string& messageOut) -> bool) {
+Int::Int(int value) {
    m_value = value;
-   m_valid = vld;
 }
-
-void Int::set(auto (*validationLogicAddress)(int val, string& messageOut) -> bool) {
-   m_valid = validationLogicAddress;
+auto Int::valid() -> bool {
+   bool res = true;
+   if (m_value < 0 || m_value > 100) {
+      m_message = "Invalid Mark, try again: ";
+      res = false;
+   }
+   return res;
 }
 
 auto Int::get(istream& istr)->istream& {
    bool done = false;
    do {
       if (istr >> m_value) {
-         done = !m_valid || m_valid(m_value, m_message);
+         done = valid();
       }
       else {
+         m_message = "Invalid Integer, try again: ";
          istr.clear();
       }         
       istr.ignore(1000, '\n');

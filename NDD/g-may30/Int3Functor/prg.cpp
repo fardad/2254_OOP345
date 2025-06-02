@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
    ValidAge kidsAge(3, 7);
-   ValidAge Adult(19, 64);
+   ValidAge Adult(19, 100);
 
    ValidMark vm;
    Int val(0, &kidsAge);

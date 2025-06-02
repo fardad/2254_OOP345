@@ -18,11 +18,11 @@ auto Int::get(istream& istr)->istream& {
          done = !m_valid || m_valid(m_value, m_message);
       }
       else {
+         m_message = "Invalid Integer, try again: ";
          istr.clear();
       }         
       istr.ignore(1000, '\n');
    } while (!done && cout << m_message);
-   m_message = "";
    return istr;
 }
 auto Int::put(ostream& ostr) const->ostream& {

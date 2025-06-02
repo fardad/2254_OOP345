@@ -1,28 +1,28 @@
 #include <iostream>
+#include <functional>
 using namespace std;
 #include "Int.h"
 
-Int::Int(int value, auto (*vld)(int val, string& messageOut) -> bool) {
-   m_value = value;
-   m_valid = vld;
+Int::Int(std::function<bool(int, string&)> lamdaValidArg) {
+   lamdaValid = lamdaValidArg;
 }
 
-void Int::set(auto (*validationLogicAddress)(int val, string& messageOut) -> bool) {
-   m_valid = validationLogicAddress;
+void Int::set(std::function<bool(int, string&)> lamdaValidArg) {
+   lamdaValid = lamdaValidArg;
 }
 
 auto Int::get(istream& istr)->istream& {
    bool done = false;
    do {
       if (istr >> m_value) {
-         done = !m_valid || m_valid(m_value, m_message);
+         done = !lamdaValid || lamdaValid(m_value, m_message);
       }
       else {
+         m_message = "Invalid Integer, try again: ";
          istr.clear();
       }         
       istr.ignore(1000, '\n');
    } while (!done && cout << m_message);
-   m_message = "";
    return istr;
 }
 auto Int::put(ostream& ostr) const->ostream& {

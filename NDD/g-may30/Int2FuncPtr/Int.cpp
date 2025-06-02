@@ -18,6 +18,7 @@ auto Int::get(istream& istr)->istream& {
          done = !m_valid || m_valid(m_value, m_message);
       }
       else {
+         m_message = "Invalid Integer, try again: ";
          istr.clear();
       }         
       istr.ignore(1000, '\n');
